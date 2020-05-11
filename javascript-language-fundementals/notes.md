@@ -151,3 +151,38 @@ const city = 'New York';
 // use back ticks and interpolation syntax
 let bio = `Name: ${name}, Age: ${age}, Job: ${job}, City: ${city}.`;
 ```
+
+### Arrays 
+
+```js
+let numbers = [43, 56, 66, 8];
+
+let numbers = new Array(43, 56, 66, 8);
+
+numbers.push(222); // adds to back of array
+
+numbers.unshift(120); // adds to front of array
+
+numbers.pop(); // removes last element of array
+
+numbers.shift(); // removes first element of array
+
+numbers.splice(1,2); // removes elements in range by index
+
+numbers.reverse(); // reverses array
+
+numbers.concat(new Array(43, 56)); // joins arrays
+
+numbers.sort(); // sorts by alphabetical or ascending order
+
+numbers.find(function () { // filtering
+    return num < 50;
+}); 
+
+```
+
+### Object Literals
+```js
+
+```
+
