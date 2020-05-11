@@ -179,10 +179,80 @@ numbers.find(function () { // filtering
     return num < 50;
 }); 
 
+numbers.foreach(function(num) { // Iterating through array
+    console.log(num);
+});
+
+let users = [
+    { id: 1, name: 'Gary' },
+    { id: 2, name: 'John' },
+    { id: 3, name: 'Dave' },
+];
+
+users.map(function(user) { // returns array of ids
+    return user.id;
+});
 ```
 
-### Object Literals
+### Objects
 ```js
+const user = {
+    firstName: 'Gary',
+    lastName: 'Huynh',
+    age: 30
+}
+
+for(let x in user) { // Iterates through object keys
+    console.log(`${x} : ${user[x]}`);
+}
+
+```
+
+### Dates & Times
+```js
+let today = new Date();
+
+today.getMonth(); // returns number value, January is 0
+
+today.getDate(); // gets day of month
+
+today.getDay(); // returns number, Sunday is 0
+
+```
+
+### Function
+```js
+    // Function Declarations
+    function square(x) {
+        return x * x;
+    }
+
+    // Function Expressions
+    const square = function(x) {
+        return x * x;
+    };
+
+    // Immediately Invokable Functions
+    (function(name) {
+        console.log(name); // logs Gary
+    })('Gary');
+
+    // Property Method
+    const person = {
+        name: 'Gary'
+        dob: '08/02/1991'
+        age: function() {
+            return new Date().getFullYear - this.dob.getFullYear();
+        }
+    }
+
+    person.age; // 29
+```
+
+### Window Methods, Objects and Properties
+```js
+
+
 
 ```
 
