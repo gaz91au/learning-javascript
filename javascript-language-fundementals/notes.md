@@ -78,7 +78,7 @@ let num1 = new Number(true);
 
 let num2 = parseInt('100.30');
 
-let num3 = parseFloat('100.30')
+let num3 = parseFloat('100.30');
 
 let num1 = new Number(5).toFixed(2);
 
@@ -87,9 +87,9 @@ let num1 = new Number(5).toFixed(2);
 ### Math and Numbers
 
 ```js
-Math.PI // Pi value
+Math.PI; // Pi value
 
-Math.E // Eulers
+Math.E; // Eulers
 
 Math.round(2.8); // 3
 
@@ -99,15 +99,15 @@ Math.floor(2.8); // 2
 
 Math.sqrt(64); // 8
 
-Math.abs(-6) // 6
+Math.abs(-6); // 6
 
-Math.pow(8, 2) // 64
+Math.pow(8, 2); // 64
 
-Math.min(2, 44, 55, 3223, 8) // 2
+Math.min(2, 44, 55, 3223, 8); // 2
 
-Math.max(2, 44, 55, 3223, 8) // 3223
+Math.max(2, 44, 55, 3223, 8); // 3223
 
-Math.random() // random decimal
+Math.random(); // random decimal
 ```
 
 ### String Methods
@@ -119,35 +119,35 @@ const colours 'blue, green, red, yellow';
 
 name.length; // 4
 
-firstName.concat(' ', lastname) // John Smith
+firstName.concat(' ', lastname); // John Smith
 
 firstName.toUpperCase(); // JOHN
 firstname.toLowerCase(); // john
 
-firstName[0] // J
+firstName[0]; // J
 
-firstName.indexOf('J') // 0
+firstName.indexOf('J'); // 0
 
-firstName.chatAt(firstName.length-1) // n
+firstName.chatAt(firstName.length-1); // n
 
-firstName.substring(0, 3) // John
+firstName.substring(0, 3); // John
 
-firstName.slice(0, 3) // John
+firstName.slice(0, 3); // John
 
-colours.split(', ') // array with 4 elements
+colours.split(', '); // array with 4 elements
 
-colours.replace('yellow', 'purple') // 'blue, green, red, purple'
+colours.replace('yellow', 'purple'); // 'blue, green, red, purple'
 
-colours.includes('red') // true
+colours.includes('red'); // true
 ```
 
 ### Template Literals
 ```js
-const name = 'John'
+const name = 'John;'
 const age = 20;
 const job = 'Software Engineer';
-const city = 'New York'
+const city = 'New York';
 
-
-
+// use back ticks and interpolation syntax
+let bio = `Name: ${name}, Age: ${age}, Job: ${job}, City: ${city}.`;
 ```
